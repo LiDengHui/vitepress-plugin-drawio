@@ -23,4 +23,15 @@ export default withDrawio(defineConfig({
       { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
     ]
   }
-}))
+}), {
+    resize: true,
+    pages: true,
+    zoom: true,
+    layers: true,
+    lightbox: true,
+    tags: true,
+    transparent: true,
+    highlight: '#0000FF',
+    darkMode: 'auto',
+    edit: '_blank'
+})

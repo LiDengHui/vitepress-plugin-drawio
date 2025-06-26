@@ -1,6 +1,6 @@
 {
     "name": "@dhlx/vitepress-plugin-drawio",
-    "version": "0.0.5",
+    "version": "0.0.6",
     "description": "vitepress plugin for drawio",
     "type": "module",
     "files": [
@@ -11,9 +11,12 @@
     "module": "./dist/index.js",
     "types": "./dist/src/index.d.ts",
     "exports": {
-        "types": "./dist/src/index.d.ts",
-        "import": "./dist/index.js",
-        "require": "./dist/index.umd.cjs"
+        ".": {
+            "types": "./dist/src/index.d.ts",
+            "import": "./dist/index.js",
+            "require": "./dist/index.umd.cjs"
+        },
+        "./DrawioViewer.vue": "./dist/DrawioViewer.vue"
     },
     "keywords": [
         "vitepress",
@@ -32,12 +35,15 @@
     "devDependencies": {
         "@types/node": "^24.0.4",
         "typescript": "^5.8.3",
-        "vite": "^5.4.19",
+        "vite": "^7.0.0",
         "vite-plugin-dts": "^4.5.4",
+        "vite-plugin-static-copy": "^3.1.0",
         "vitepress": "^2.0.0-alpha.0"
     },
     "repository": {
         "url": "git+https://github.com/LiDengHui/vitepress-plugin-drawio.git",
         "type": "git"
+    },
+    "peerDependencies": {
     }
 }

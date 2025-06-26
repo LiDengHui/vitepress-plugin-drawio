@@ -21,7 +21,7 @@ features:
     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
   - title: Feature C
     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
----
+--- 
+![](./img/favicon.svg) 
 
-![](./img/favicon.svg)
-![](./img/hmr.drawio){edit=_blank transparent=1 nav=1  }
+![web hmr](./img/hmr.drawio){height=800px}
