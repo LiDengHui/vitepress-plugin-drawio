@@ -1,8 +1,8 @@
 node_modules
 .DS_Store
 .idea
-docs
+
 /dist
-.vitepress/cache
-.vitepress/dist
+docs/.vitepress/cache
+docs/.vitepress/dist
 *-lock.json
