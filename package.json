@@ -1,6 +1,6 @@
 {
     "name": "@dhlx/vitepress-plugin-drawio",
-    "version": "0.0.4",
+    "version": "0.0.5",
     "description": "vitepress plugin for drawio",
     "type": "module",
     "files": [
