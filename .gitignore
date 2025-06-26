@@ -1,0 +1,8 @@
+node_modules
+.DS_Store
+.idea
+docs
+/dist
+.vitepress/cache
+.vitepress/dist
+*-lock.json
