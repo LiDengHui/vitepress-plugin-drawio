@@ -54,16 +54,16 @@ export default withDrawio(defineConfig({
 ## Example
 
 ```md
-![](./img/hmr.drawio){edit=_blank transparent=1 nav=1  }
+![](./img/hmr.drawio){edit=_blank transparent=true nav=true  }
 ```
 `{}` is the attribute of the drawio diagram. You can set the attribute in the `vitepress.config.ts` file.
 
-if you set the `transparent=1`，the background will be transparent. 
+if you set the `transparent=true`，the background will be transparent. 
 
 other attribute will be override the `vitepress.config.ts` file.
 
 
-![](./README/521593164342791.png)
+![](./README/58965768040416.png)
 
 
 ## drawio export embed html 
