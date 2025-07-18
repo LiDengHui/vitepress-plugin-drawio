@@ -3,7 +3,7 @@
   <div class="mxgraph" :data-mxgraph="data" :style="style"></div>
 </template>
 <script setup>
-import { watch, computed, useSlots, ref} from 'vue'
+import {watch, computed, useSlots} from 'vue'
 
 const props = defineProps({
   width: {
@@ -86,7 +86,7 @@ const data = computed(() => {
     lightbox
   }).reduce((acc, [key, value]) => {
     return acc + (value ? `${key} ` : "")
-  }, []).trim();
+  }, '').trim();
 
   const data = {
     page,
@@ -124,7 +124,7 @@ const style = computed(() => {
 })
 
 
-const debounce = (fn, ms) => {
+function debounce(fn, ms) {
   let timer;
   return (...args) => {
     clearTimeout(timer);
@@ -132,12 +132,12 @@ const debounce = (fn, ms) => {
       fn.apply(this, args);
     }, ms);
   };
-};
+}
 
 const fn = debounce(() => {
   if (window.Editor) {
     window.Editor.initMath();
-    if (null != window.onDrawioViewerLoad) onDrawioViewerLoad(); else window.GraphViewer.processElements()
+    if (null != window.onDrawioViewerLoad) window.onDrawioViewerLoad(); else window.GraphViewer.processElements()
   }
 }, 0)
 

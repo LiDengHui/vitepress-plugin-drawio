@@ -2,12 +2,6 @@ import {type  UserConfig} from "vitepress";
 import * as path from "path";
 import {drawioPlugin} from "./plugin.ts";
 
-declare module "vitepress" {
-    interface UserConfig {
-
-    }
-}
-
 
 interface DrawioConfig {
     // set default width， default： 100%
@@ -141,7 +135,7 @@ const withDrawio = (config: UserConfig, drawioConfig: DrawioConfig = {}) => {
                             ${lightbox ? "lightbox" : ""}
                             highlight="${highlight}"
                             ${transparent ? "transparent" : ""}
-                            ${true ? "nav" : ""}
+                            nav
                             ${resize ? "resize" : ""}
                             height="${height}"
                             width="${width}" >

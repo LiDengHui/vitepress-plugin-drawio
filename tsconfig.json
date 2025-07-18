@@ -8,9 +8,10 @@
             "DOM",
             "DOM.Iterable"
         ],
+        "types": ["global.d.ts"],
         "skipLibCheck": true,
         /* Bundler mode */
-        "moduleResolution": "Bundler",
+        "moduleResolution": "nodenext",
         "allowImportingTsExtensions": true,
         "resolveJsonModule": true,
         "isolatedModules": true,
@@ -23,6 +24,5 @@
     },
     "include": [
         "src/*",
-        "vite.config.ts"
     ]
 }
